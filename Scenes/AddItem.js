@@ -1,12 +1,17 @@
-
+//Adds item to firebase list
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert, Image, ImageBackground } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
 
 import { addItem } from '../services/ItemService';
 import styles from './Stylesheet/Style';
 
 
 export default class AddItem extends Component {
+
+    static navigationOptions = {
+        title: 'Add Treasure',
+        headerRight: <View />
+    }
 
     constructor(props) {
         super(props);

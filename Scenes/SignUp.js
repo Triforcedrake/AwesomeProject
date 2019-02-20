@@ -1,13 +1,17 @@
-﻿
+﻿//Layout for the sign up, still not functional
 import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, ImageBackground, Text, StyleSheet, View, TextInput, TouchableOpacity, ActivityIndicator, FlatList } from 'react-native';
-import { createStackNavigator, createAppContainer, } from 'react-navigation';
+import { ImageBackground, Text, View, TextInput, TouchableOpacity, } from 'react-native';
 
 import styles from './Stylesheet/Style';
 import db from '../config/db';
 
 
 export default class SignUp extends React.Component {
+
+    static navigationOptions = {
+        title: 'Meeting the Dragon',
+        headerRight: <View />
+    }
 
     render() {
         return (

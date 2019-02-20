@@ -1,6 +1,6 @@
-
+//Lists the items on the firebase database
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
+import { View, ImageBackground, Text } from 'react-native';
 import ItemComponent from '../components/ItemComponent';
 
 import styles from './Stylesheet/Style';
@@ -9,6 +9,11 @@ import { db } from '../config/db';
 let itemsRef = db.ref('/items');
 
 export default class ListItem extends Component {
+
+    static navigationOptions = {
+        title: 'Treasury',
+        headerRight: <View />
+    }
 
     state = {
         items: []

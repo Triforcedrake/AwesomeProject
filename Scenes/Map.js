@@ -1,6 +1,6 @@
-﻿import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, Text, StyleSheet, View, TextInput, TouchableOpacity, ActivityIndicator, FlatList } from 'react-native';
-//import { createStackNavigator, createAppContainer, } from 'react-navigation';
+﻿//Test of google maps Api implementation
+import React, { Component } from 'react';
+import { View, ActivityIndicator} from 'react-native';
 import MapView from 'react-native-maps';
 
 
@@ -14,7 +14,7 @@ export default class MapScreen extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <View style={styles.mapContainer}>
                 <MapView style={styles.map}
                     region={{
                         latitude: 55.396229,
@@ -44,22 +44,3 @@ export default class MapScreen extends Component {
         }
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        left: 0, 
-        right: 0, 
-        justifyContent: 'flex-end', 
-        alignItems: 'center',
-    },
-    map: {
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0, 
-    },
-});

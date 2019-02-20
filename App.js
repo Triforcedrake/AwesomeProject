@@ -1,6 +1,6 @@
 ﻿
 import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, ImageBackground, Text, StyleSheet, View, TextInput, TouchableOpacity, ActivityIndicator, FlatList } from 'react-native';
+import { AppRegistry, ImageBackground, Text, StyleSheet, View, TextInput, TouchableOpacity } from 'react-native';
 import { createStackNavigator, createAppContainer, } from 'react-navigation';
 
 import MapScreen from './Scenes/Map';
@@ -12,6 +12,10 @@ import styles from './Scenes/Stylesheet/Style';
 import db from './config/db';
 
 class HomeScreen extends Component {
+
+    static navigationOptions = {
+        title: 'Main',
+    }
 
     render() {
         return (
@@ -68,12 +72,16 @@ class HomeScreen extends Component {
 
                     </View>
 
+                    <View style={{ padding: 12, }}>
+                    </View>
+
                     <TouchableOpacity
                         style={styles.mapBtn}
                         onPress={() => this.props.navigation.navigate('Map')}
                     >
                         <Text>Map</Text>
                     </TouchableOpacity>
+                   
                 </View>
             </ImageBackground>
         );

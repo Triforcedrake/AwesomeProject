@@ -1,12 +1,6 @@
-﻿/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+﻿//The style sheet for most of the app scenes. 
 import React, { Component } from 'react';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 
 export default styles = StyleSheet.create({
@@ -16,7 +10,7 @@ export default styles = StyleSheet.create({
     },
     container: {
         flex: 1,
-        justifyContent: 'center', 
+        justifyContent: 'center',
         alignItems: 'center',
     },
     welcome: {
@@ -24,15 +18,15 @@ export default styles = StyleSheet.create({
         fontSize: 30,
         textAlign: 'center',
         margin: 10,
-        color: 'white',    
+        color: 'white',
     },
     input: {
         textAlign: 'center',
-        borderRadius: 25, 
-        width: "90%", 
+        borderRadius: 25,
+        width: "90%",
         backgroundColor: '#fff',
-        padding: 15, 
-        marginBottom: 10, 
+        padding: 15,
+        marginBottom: 10,
     },
     btnContainer: {
         flexDirection: "row",
@@ -41,15 +35,14 @@ export default styles = StyleSheet.create({
     },
     userBtn: {
         textAlign: 'center',
-        borderRadius: 15, 
+        borderRadius: 15,
         backgroundColor: "#FFD700",
         justifyContent: "center",
         alignItems: "center",
-        padding: 15, 
+        padding: 15,
         width: "45%",
     },
     mapBtn: {
-        position: 'absolute',
         textAlign: 'center',
         padding: 15,
         bottom: 15,
@@ -59,23 +52,39 @@ export default styles = StyleSheet.create({
         alignItems: "center",
         width: "45%",
     },
-	listContainer: {
-      flex: 1,
-      justifyContent: 'center',
-      backgroundColor: '#B6A6BB',
+    listContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#B6A6BB',
     },
-	  addListMain: {
-    flex: 1,
-    padding: 30,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    backgroundColor: '#2a8ab7'
-  },
+    addListMain: {
+        flex: 1,
+        padding: 30,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        backgroundColor: '#2a8ab7'
+    },
     buttonText: {
-    fontSize: 18,
-    color: '#111',
-    alignSelf: 'center'
-  },
+        fontSize: 18,
+        color: '#111',
+        alignSelf: 'center'
+    },
+    mapContainer: {
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+    },
+    map: {
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+    },
 
 })
 

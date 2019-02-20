@@ -1,13 +1,13 @@
-﻿
+﻿//Just a test screen for now
 import React, { Component } from 'react';
-import { AppRegistry, ScrollView, Image, ImageBackground, Text, StyleSheet, View, TextInput, TouchableOpacity, ActivityIndicator, FlatList } from 'react-native';
-import { createStackNavigator, createAppContainer, } from 'react-navigation';
+import {ImageBackground, View } from 'react-native';
 
+import styles from './Stylesheet/Style';
 
 export default class LoginScreen extends Component {
 
     static navigationOptions = {
-        title: 'Login',
+        title: 'The Lair',
         headerRight: <View />
     }
 
@@ -19,9 +19,3 @@ export default class LoginScreen extends Component {
         );
     }
 }
-
-const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-    },
-})
