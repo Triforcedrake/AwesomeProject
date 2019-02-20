@@ -9,9 +9,15 @@ as well as a Firebase database setup that allows adding of words to a list and t
 //Installation
 To install, download the main master project file and unzip it where you want it. 
 Use a command prombt to navigate to the source level of the file (the one with the App.js file)
-From there, run "$ npm install" and wait for it to finish. 
+From there, run 
+'''
+$ npm install
+''' 
+and wait for it to finish. 
 After that it should be possible to run the project on the Android device of your choosing by way of, 
-"$React-Native Run-Android."
+'''
+$React-Native Run-Android
+'''
 
 The project was tested and run succesfully on a Samsung Galaxy Phone (Android 5.1.1, API 22)
 And a Nexus 5X API Oreo 27 virtual device. 
