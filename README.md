@@ -24,7 +24,7 @@ and wait for it to finish.
 Step 4: Run the project on the Android device of your choosing or a virtual device like what is used by Android Studio by way of, 
 
 ```
-$React-Native Run-Android
+$ React-Native Run-Android
 ```
 
 The project was tested and run succesfully on a Samsung Galaxy Phone (Android 5.1.1, API 22)
