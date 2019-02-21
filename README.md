@@ -5,6 +5,7 @@ I created this project for the purpose of me learning and testing a variety of R
 As such it includes basics like layout, styleSheet, navigation and the likes. 
 But it also includes an implementation of the Google Maps API,
 as well as a Firebase database setup that allows adding of words to a list and the viewing of that list. 
+The login/sign up functions while present in design, are not yet implemented. 
 
 ## Installation
 Step 1: Download the main master project file and unzip it where you want it. 
