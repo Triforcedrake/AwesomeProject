@@ -31,7 +31,7 @@ $ React-Native Run-Android
 The project was tested and run succesfully on a Samsung Galaxy Phone (Android 5.1.1, API 22)
 And a Nexus 5X API Oreo 27 virtual device. 
 
-IoS is untested. 
+IOS is untested. 
 
 ## Known issues
 Yellow warning about setting a timer for a long period of time. Introduced with integration of Firebase database connection. No observed problems so far, but attempts to find cause have been unsuccesful as well. 
