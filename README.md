@@ -10,7 +10,7 @@ The login/sign up functions while present in design, are not yet implemented.
 ## Installation
 Step 1: Download the main master project file and unzip it where you want it. 
 
-Step 2: Use a command prombt to navigate to the source level of the file (the one with the App.js file).
+Step 2: Use a command prompt to navigate to the source level of the file (the one with the App.js file).
 
 Step 3: From there, run 
 
