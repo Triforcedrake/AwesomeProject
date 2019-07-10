@@ -6,7 +6,6 @@ import MapView from 'react-native-maps';
 
 export default class MapScreen extends Component {
 
-
     static navigationOptions = {
         title: 'Map',
         headerRight: <View />

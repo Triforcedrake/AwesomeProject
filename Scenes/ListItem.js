@@ -4,6 +4,8 @@ import { View, ImageBackground, Text } from 'react-native';
 import ItemComponent from '../components/ItemComponent';
 
 import styles from './Stylesheet/Style';
+
+//Importing the firebase database information 
 import { db } from '../config/db';
 
 let itemsRef = db.ref('/items');

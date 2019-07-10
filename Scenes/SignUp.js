@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import { ImageBackground, Text, View, TextInput, TouchableOpacity, } from 'react-native';
 
 import styles from './Stylesheet/Style';
-import db from '../config/db';
-
 
 export default class SignUp extends React.Component {
 

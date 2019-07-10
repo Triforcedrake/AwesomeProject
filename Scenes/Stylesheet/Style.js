@@ -85,6 +85,27 @@ export default styles = StyleSheet.create({
         left: 0,
         right: 0,
     },
+    MainContainer: { 
+        flex: 1,
+        backgroundColor: 'white',
+        alignItems: 'center'
+    },
+    textHeading: {
+        color: '#191919',
+        fontSize: 30,
+        textAlign: 'center'
+    },
+    elementContainer: {
+        width: '100%',
+        marginTop: 30,
+        alignItems: 'center',
+    },
+    separator: {
+        height: 0.5,
+        width: '60%',
+        backgroundColor: '#C2C2C2',
+        marginTop: 10,
+    },
 
 })
 
