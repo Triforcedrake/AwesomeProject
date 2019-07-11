@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import { ImageBackground, Text, View, TextInput, TouchableOpacity } from 'react-native';
-import stringsoflanguages from './stringsoflanguages';
 
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 export default class HomeScreen extends Component {
-
-    static navigationOptions = {
-        title: 'Main',
-    }
 
     render() {
         return (
@@ -24,7 +20,7 @@ export default class HomeScreen extends Component {
                     />
                     <TextInput
                         style={styles.input}
-                        placeholder="Password"
+                        placeholder={stringsoflanguages.password}
                         autoCapitalize="none"
                         secureTextEntry
                     />
@@ -33,19 +29,19 @@ export default class HomeScreen extends Component {
                             style={styles.userBtn}
                             onPress={() => this.props.navigation.navigate('Login')}
                         >
-                            <Text>Enter</Text>
+                            <Text>{stringsoflanguages.enter}</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.userBtn}
                             onPress={() => this.props.navigation.navigate('SignUp')}
                         >
-                            <Text>Sign Up</Text>
+                            <Text>{stringsoflanguages.signUp}</Text>
                         </TouchableOpacity>
 
                     </View>
 
-                    <View style={{ flex: 5, }}>
+                    <View style={{ flex: 1, }}>
                     </View>
 
                     <View style={styles.btnContainer}>
@@ -53,14 +49,14 @@ export default class HomeScreen extends Component {
                             style={styles.userBtn}
                             onPress={() => this.props.navigation.navigate('AddItem')}
                         >
-                            <Text>Add Item</Text>
+                            <Text>{stringsoflanguages.itemAdd}</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.userBtn}
                             onPress={() => this.props.navigation.navigate('ListItem')}
                         >
-                            <Text>List Item</Text>
+                            <Text>{stringsoflanguages.itemList}</Text>
                         </TouchableOpacity>
 
                     </View>
@@ -72,7 +68,7 @@ export default class HomeScreen extends Component {
                         style={styles.mapBtn}
                         onPress={() => this.props.navigation.navigate('Map')}
                     >
-                        <Text>Map</Text>
+                        <Text>{stringsoflanguages.map}</Text>
                     </TouchableOpacity>
                    
                 </View>

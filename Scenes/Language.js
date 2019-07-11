@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
-import stringsoflanguages from './stringsoflanguages';
+import { View, Text, TouchableOpacity } from 'react-native';
+
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 export default class Language extends React.Component {
