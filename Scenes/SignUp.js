@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { ImageBackground, Text, View, TextInput, TouchableOpacity, } from 'react-native';
 
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 export default class SignUp extends React.Component {
@@ -26,7 +27,7 @@ export default class SignUp extends React.Component {
 
                     <TextInput
                         style={styles.input}
-                        placeholder="Password"
+                        placeholder={stringsoflanguages.password}
                         autoCapitalize="none"
                         secureTextEntry
                     />

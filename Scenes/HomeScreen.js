@@ -6,12 +6,17 @@ import styles from './Stylesheet/Style';
 
 export default class HomeScreen extends Component {
 
+    static navigationOptions = {
+        title: stringsoflanguages.header1,
+        headerRight: <View />
+    }
+
     render() {
         return (
             <ImageBackground source={require('./Images/DragonCave.png')}
                 style={styles.background}>
                 <View style={styles.container}>
-                    <Text style={styles.welcome}>{stringsoflanguages.header1}</Text>
+                    <Text style={styles.welcome}>{stringsoflanguages.header2}</Text>
 
                     <TextInput
                         style={styles.input}

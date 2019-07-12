@@ -27,13 +27,14 @@ export default class Language extends React.Component {
         </View>
         <View style={styles.btnContainer}>
           {global.lang.map((item, key) => (
-            <View style={styles.userBtn}>
-              <Text
-                ref={item.shortform}
-                onPress={() => this.settext(item.shortform)}>
+             <TouchableOpacity  
+             ref={item.shortform}
+             onPress={() => this.settext(item.shortform)}
+             style={styles.userBtn}>
+              <Text>
                 {item.longform}
               </Text>
-            </View>
+            </TouchableOpacity>
           ))}
       </View>
       </View>
