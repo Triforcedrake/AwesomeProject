@@ -90,11 +90,6 @@ export default styles = StyleSheet.create({
         backgroundColor: 'white',
         alignItems: 'center'
     },
-    textHeading: {
-        color: '#191919',
-        fontSize: 30,
-        textAlign: 'center'
-    },
     elementContainer: {
         width: '100%',
         marginTop: 30,

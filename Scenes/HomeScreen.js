@@ -46,10 +46,7 @@ export default class HomeScreen extends Component {
 
                     </View>
 
-                    <View style={{ flex: 1, }}>
-                    </View>
-
-                    <View style={styles.btnContainer}>
+                    <View style={[styles.btnContainer, {marginTop: 10}]}>
                         <TouchableOpacity
                             style={styles.userBtn}
                             onPress={() => this.props.navigation.navigate('AddItem')}

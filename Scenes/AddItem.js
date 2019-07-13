@@ -1,8 +1,9 @@
 //Adds item to firebase list
 import React, { Component } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert, ImageBackground } from 'react-native';
-
 import { addItem } from '../services/ItemService';
+
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 
@@ -30,7 +31,7 @@ export default class AddItem extends Component {
     handleSubmit() {
         addItem(this.state.name);
         Alert.alert(
-            'Item saved successfully'
+            "Item added"
         );
     }
     render() {
@@ -38,7 +39,7 @@ export default class AddItem extends Component {
             <ImageBackground source={require('./Images/DragonOnTreasure.png')}
                 style={styles.background}>
                 <View style={styles.container}>
-                    <Text style={styles.welcome}>Add Item</Text>
+                    <Text style={styles.welcome}>{stringsoflanguages.AddTitle}</Text>
                     <TextInput
                         style={styles.input}
                         onChange={this.handleChange}
@@ -50,8 +51,8 @@ export default class AddItem extends Component {
                     >
                         <Text
                             style={styles.buttonText}>
-                            Add
-              </Text>
+                             {stringsoflanguages.AddButton}
+                        </Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>

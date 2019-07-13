@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { ImageBackground, View, Text, TouchableOpacity } from 'react-native';
 
 import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
@@ -19,13 +19,15 @@ export default class Language extends React.Component {
   }
   render() {
     return (
+      <ImageBackground source={require('./Images/DragonMountain.png')}
+          style={styles.background}>
       <View style={styles.container}>
         <View style={{ marginTop: 10 }}>
-          <Text style={styles.textHeading}>
+          <Text style={styles.welcome}>
             Please Select Preferred Language
           </Text>
         </View>
-        <View style={styles.btnContainer}>
+        <View style={[styles.btnContainer, {marginTop: 25}]}>
           {global.lang.map((item, key) => (
              <TouchableOpacity  
              ref={item.shortform}
@@ -38,6 +40,7 @@ export default class Language extends React.Component {
           ))}
       </View>
       </View>
+      </ImageBackground>
     );
   }
 }

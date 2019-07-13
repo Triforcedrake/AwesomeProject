@@ -15,6 +15,11 @@ const strings = new LocalizedStrings({
     //Sign Up
     signUpHeader: "Skriv dig op her!",
     confirm: "Bekræft",
+
+    //AddItem
+    AddTitle: "Tilføj skat", 
+    AddAlert: "Skat tilføjet",
+    AddButton: "Tilføj", 
   },
   "en":{
     //HomeScreen
@@ -30,6 +35,11 @@ const strings = new LocalizedStrings({
     //Sign Up
     signUpHeader: "Sign Up here!",
     confirm: "Confirm",
+
+    //AddItem
+    AddTitle: "Add treasure",
+    AddAlert: "Treasure added",
+    AddButton: "Add", 
   },
 });
 export default strings;
