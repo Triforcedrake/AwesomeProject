@@ -3,27 +3,38 @@ const strings = new LocalizedStrings({
   "dk":{
 
     //HomeScreen
-    header1: "Indgang",
+    titleHome: "Indgang",
     header2: "Velkommen i dragens hule", 
     password: "Kodeord",
     enter: "Videre",
-    signUp: "Skriv op", 
+    signUp: "Skriv dig op", 
     itemAdd: "Tilføj ting", 
     itemList: "Se liste",
     map: "Kort", 
 
     //Sign Up
+    titleSignUp: "Mød dragen!",
     signUpHeader: "Skriv dig op her!",
     confirm: "Bekræft",
 
     //AddItem
-    AddTitle: "Tilføj skat", 
-    AddAlert: "Skat tilføjet",
-    AddButton: "Tilføj", 
+    titleAdd: "Tilbyd skat", 
+    addTitle: "Tilføj skat", 
+    addAlert: "Skat tilføjet",
+    addButton: "Tilføj", 
+
+    //ListItem
+    titleList: "Skatkammer",
+
+    //Map
+    titleMap: "Kort",
+
+    //Login
+    titleLogin: "Hulen", 
   },
   "en":{
     //HomeScreen
-    header1: "Entrance",
+    titleHome: "Entrance",
     header2: "Welcome to the dragon's lair",
     password: "Password", 
     enter: "Enter",
@@ -33,13 +44,24 @@ const strings = new LocalizedStrings({
     map: "Map",
 
     //Sign Up
+    titleSignUp: "Meet the dragon!",
     signUpHeader: "Sign Up here!",
     confirm: "Confirm",
 
     //AddItem
-    AddTitle: "Add treasure",
-    AddAlert: "Treasure added",
-    AddButton: "Add", 
+    titleAdd: "Offer treasure",
+    addTitle: "Add treasure",
+    addAlert: "Treasure added",
+    addButton: "Add", 
+
+    //ListItem
+    titleList: "Treasury",
+
+    //Map
+    titleMap: "Map",
+
+    //Login
+    titleLogin: "Lair", 
   },
 });
 export default strings;

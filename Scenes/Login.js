@@ -2,14 +2,17 @@
 import React, { Component } from 'react';
 import {ImageBackground, View } from 'react-native';
 
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 export default class LoginScreen extends Component {
 
-    static navigationOptions = {
-        title: 'The Lair',
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleLogin,
         headerRight: <View />
-    }
+        };
+    };
 
     render() {
         return (

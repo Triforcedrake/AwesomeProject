@@ -6,10 +6,12 @@ import styles from './Stylesheet/Style';
 
 export default class HomeScreen extends Component {
 
-    static navigationOptions = {
-        title: stringsoflanguages.header1,
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleHome,
         headerRight: <View />
-    }
+        };
+    };
 
     render() {
         return (

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { View, ImageBackground, Text } from 'react-native';
 import ItemComponent from '../components/ItemComponent';
 
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 import styles from './Stylesheet/Style';
 
 //Importing the firebase database information 
@@ -12,11 +13,13 @@ let itemsRef = db.ref('/items');
 
 export default class ListItem extends Component {
 
-    static navigationOptions = {
-        title: 'Treasury',
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleList,
         headerRight: <View />
-    }
-
+        };
+    };
+    
     state = {
         items: []
     }

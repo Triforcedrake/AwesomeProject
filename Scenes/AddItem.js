@@ -9,10 +9,12 @@ import styles from './Stylesheet/Style';
 
 export default class AddItem extends Component {
 
-    static navigationOptions = {
-        title: 'Add Treasure',
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleAdd,
         headerRight: <View />
-    }
+        };
+    };
 
     constructor(props) {
         super(props);
@@ -39,7 +41,7 @@ export default class AddItem extends Component {
             <ImageBackground source={require('./Images/DragonOnTreasure.png')}
                 style={styles.background}>
                 <View style={styles.container}>
-                    <Text style={styles.welcome}>{stringsoflanguages.AddTitle}</Text>
+                    <Text style={styles.welcome}>{stringsoflanguages.addTitle}</Text>
                     <TextInput
                         style={styles.input}
                         onChange={this.handleChange}
@@ -51,7 +53,7 @@ export default class AddItem extends Component {
                     >
                         <Text
                             style={styles.buttonText}>
-                             {stringsoflanguages.AddButton}
+                             {stringsoflanguages.addButton}
                         </Text>
                     </TouchableOpacity>
                 </View>

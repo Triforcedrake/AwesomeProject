@@ -3,14 +3,16 @@ import React, { Component } from 'react';
 import { View, ActivityIndicator} from 'react-native';
 import MapView from 'react-native-maps';
 
+import stringsoflanguages from './Stylesheet/stringsoflanguages';
 
 export default class MapScreen extends Component {
 
-    static navigationOptions = {
-        title: 'Map',
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleMap,
         headerRight: <View />
-    }
-
+        };
+    };
     render() {
         return (
             <View style={styles.mapContainer}>
@@ -34,12 +36,6 @@ export default class MapScreen extends Component {
             </View>
         )
 
-        if (this.state.isLoading) {
-            return (
-                <View style={{ flex: 1, padding: 20 }}>
-                    <ActivityIndicator />
-                </View>
-            )
-        }
     }
+    
 }

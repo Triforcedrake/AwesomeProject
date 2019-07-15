@@ -7,17 +7,18 @@ import styles from './Stylesheet/Style';
 
 export default class SignUp extends React.Component {
 
-    static navigationOptions = {
-        title: 'Meeting the Dragon',
+    static navigationOptions() {
+        return {
+        title: stringsoflanguages.titleSignUp,
         headerRight: <View />
-    }
-
+        };
+    };
     render() {
         return (
             <ImageBackground source={require('./Images/DragonMeeting.png')}
                 style={styles.background}>
                 <View style={styles.container}>
-                    <Text style={styles.welcome}>Sign Up here!</Text>
+                    <Text style={styles.welcome}>{stringsoflanguages.signUpHeader}</Text>
 
                     <TextInput
                         style={styles.input}
@@ -35,7 +36,7 @@ export default class SignUp extends React.Component {
                     <TouchableOpacity
                         style={styles.userBtn}
                     >
-                        <Text>Confirm</Text>
+                        <Text>{stringsoflanguages.confirm}</Text>
                     </TouchableOpacity>
                 </View>
             </ImageBackground>
