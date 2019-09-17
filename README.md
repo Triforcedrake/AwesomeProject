@@ -10,9 +10,11 @@ The login/sign up functions while present in design, are not yet implemented.
 ## Installation
 Step 1: Download the main master project file and unzip it where you want it. 
 
-Step 2: Use a command prompt to navigate to the source level of the file (the one with the App.js file).
+Step 2: Since this project includes firebase implementation a Firebase.config file is required. Guidance on how to aquire can be found here: https://firebase.google.com/docs/web/setup 
 
-Step 3: From there, run 
+Step 3: Use a command prompt to navigate to the source level of the file (the one with the App.js file).
+
+Step 4: From there, run 
 
 ```
 $ npm install
@@ -22,7 +24,7 @@ and wait for it to finish.
 
 *Before running android build, setup Android Studio*
 
-Step 4: Run the project on the Android device of your choosing or a virtual device, by way of the following command.  
+Step 5: Run the project on the Android device of your choosing or a virtual device, by way of the following command.  
 
 ```
 $ React-Native Run-Android
@@ -35,3 +37,5 @@ IOS is untested.
 
 ## Known issues
 Yellow warning about setting a timer for a long period of time. Introduced with integration of Firebase database connection. No observed problems so far, but attempts to find cause have been unsuccesful as well. 
+
+Install will occasionally create copies of dependencies in the Java Main application under GetPackages. If this error occurs, removal of duplicates should fix the issue. 
